@@ -1,0 +1,20 @@
+<head>
+    <html>
+        <body>
+            <H1>Hello in Javascript</H1>
+            <FORM NAME="NameForm">
+                Enter your name and a click button:
+                <INPUT NAME="Text1" TYPE="TEXT" SIZE="10">
+                <INPUT NAME="Button1" TYPE="BUTTON"
+                VALUE="Hello" onclick="Button1_onClick()">    
+            </FORM>
+            <SCRIPT LANGUAGE="Javascript">
+            var now = new Date();
+            document.write("Current time: "+now.getHours() + ":" + now.getMinutes());
+            function Button1_onClick() {
+                document.write("Hello "+document.NameForm.Text1.value + "<br>");
+            }
+            </SCRIPT>
+        </body>
+    </html>
+</head>
